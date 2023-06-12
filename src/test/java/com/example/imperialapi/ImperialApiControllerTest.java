@@ -9,6 +9,6 @@ class ImperialApiControllerTest {
 @Test
     public void gramTest(){
     i.convertToGram(2);
-    assertEquals(57,i.convertToGram(2));
+    assertEquals(56.7,i.convertToGram(2));
 }
 }
