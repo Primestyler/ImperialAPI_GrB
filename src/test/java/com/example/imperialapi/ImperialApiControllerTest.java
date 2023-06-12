@@ -6,9 +6,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ImperialApiControllerTest {
     ImperialApiController i=new ImperialApiController();
-@Test
+    @Test
     public void gramTest(){
-    i.convertToGram(2);
-    assertEquals(56.7,i.convertToGram(2));
+        double ounce=2;
+    double result= i.convertToGram(ounce);
+    assertEquals(56.7,result);
 }
+    @Test
+    public void kilogramTest(){
+        double stone=1;
+        double result= i.convertToKilogram(stone);
+        assertEquals(6.35,result);
+    }
 }
